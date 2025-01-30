@@ -1,0 +1,71 @@
+.newproject_container h1 {
+    color: #01257d;
+}
+
+
+.newproject_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.newproject_container h1 {
+    margin-bottom: 0.5em;
+}
+
+.newproject_container p {
+    color: #01257d;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .newproject_container {
+        padding: 2em; /* Reduz o padding para telas médias */
+    }
+
+    .newproject_container h1 {
+        font-size: 2em; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .newproject_container p {
+        font-size: 1em; /* Fonte menor para parágrafos */
+    }
+}
+
+@media (max-width: 768px) {
+    .newproject_container {
+        padding: 1.5em; /* Padding menor para dispositivos menores */
+    }
+
+    .newproject_container h1 {
+        font-size: 1.8em; /* Reduz mais o tamanho do título */
+        text-align: center; /* Centraliza o texto para melhor estética */
+    }
+
+    .newproject_container p {
+        font-size: 0.9em; /* Fonte menor para melhorar a leitura */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .newproject_container {
+        padding: 1em; /* Menor espaçamento para telas muito pequenas */
+    }
+
+    .newproject_container h1 {
+        font-size: 1.5em; /* Tamanho reduzido do título */
+        text-align: center;
+    }
+
+    .newproject_container p {
+        font-size: 0.8em; /* Tamanho menor para parágrafos */
+        text-align: center;
+    }
+}
