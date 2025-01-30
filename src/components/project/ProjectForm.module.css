@@ -1,0 +1,128 @@
+div.contato {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* input */
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_input label {
+    margin-top: .6em;
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form_input input {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+}
+
+.form_input input::placeholder {
+    color: #477498a4;
+}
+
+/* select */
+
+.form_select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_select label {
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form_select select {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+    color: #01257d;
+    background-color: white;
+
+}
+
+/* textarea */
+
+.form_text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_text label {
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form_text textarea {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+    height: 150px;
+    resize: none;
+}
+
+.form_text textarea::placeholder {
+    color: #477498a4;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    .form {
+        padding: 0 2em; /* Ajuste de padding para tablets */
+    }
+
+    .form_input input, 
+    .form_select select, 
+    .form_text textarea {
+        font-size: 1em; /* Tamanho da fonte adaptado */
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: 0 1.5em;
+    }
+
+    .form_input label, 
+    .form_select label, 
+    .form_text label {
+        font-size: 1em; /* Redução do tamanho do label */
+    }
+
+    .form_input input, 
+    .form_select select, 
+    .form_text textarea {
+        font-size: 0.9em; /* Fonte menor */
+        padding: 0.6em; /* Espaçamento interno ajustado */
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 0 1em; /* Reduzido ainda mais para smartphones */
+    }
+
+    .form_input input, 
+    .form_select select, 
+    .form_text textarea {
+        font-size: 0.8em; /* Fonte menor para caber na tela */
+        padding: 0.5em;
+    }
+}
