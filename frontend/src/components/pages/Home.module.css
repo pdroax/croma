@@ -1,0 +1,227 @@
+.home_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4em; */
+}
+
+.home_container h1.title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #01257d;
+}
+
+/* .home_container h1 span {
+    color: #01257d;
+    padding: padding 0 0.2em;
+    /* background-color: #222;
+ } */
+
+.home_container h2.textIn {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    /* color: #00ffff; */
+    color: #01257d;
+}
+
+.home_container img {
+    width: 350px;
+    margin: 2em 0;
+}
+
+div.video{
+    width: 100vw;
+    height: 100vh;    
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+div.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.content div {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rates {
+    margin: 50px;
+}
+
+.bgRates {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #f8e9d4;
+}
+
+.textPitch p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #01247dc6;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+
+    .home_container h1.title {
+        font-size: 2.5em; /* Título menor */
+    }
+
+    .home_container h2.textIn {
+        font-size: 1.8em; /* Subtítulo menor */
+    }
+
+    .home_container img {
+        width: 300px; /* Imagem menor */
+    }
+
+    .textPitch p {
+        font-size: 1.2rem; /* Ajuste na fonte do texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .home_container h1.title {
+        font-size: 2em;
+    }
+
+    .home_container h2.textIn {
+        font-size: 1.5em;
+    }
+
+    .home_container img {
+        width: 250px;
+    }
+
+    div.video {
+/* Vídeo menor para tablets */
+    }
+
+    .textPitch p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_container h1.title {
+        font-size: 1.5em;
+    }
+
+    .home_container h2.textIn {
+        font-size: 1.2em;
+    }
+
+    .home_container img {
+        width: 200px;
+    }
+
+    div.video {
+/* Vídeo menor para smartphones */
+    }
+
+    .textPitch p {
+        font-size: 0.9rem;
+    }
+
+    .rates {
+        margin: 20px; /* Redução do espaçamento para dispositivos pequenos */
+    }
+}
+
+.btn {
+    /* position: absolute; */
+    color: #01257d;
+    /* padding: 1em 4em; */
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 3px solid;
+    border-radius: 25px;
+    /* background-image: linear-gradient(to bottom right, #F3DDBE, black, #F3DDBE, #7a5520); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.btn a {
+    padding: 1em 4em;
+    text-decoration: none;
+    color: #01257d;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: #f8e9d4;
+}
+
+.btn:hover {
+    color: #f8e9d4;
+    background-color: #01257d;
+    border-color: #01257d;
+    /* z-index: 0; */
+    cursor: pointer;
+
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 1.2em; /* Reduz o tamanho da fonte para telas médias */
+        padding: 0.8em 3em; /* Ajusta o espaçamento */
+        border-radius: 20px; /* Torna o botão mais compacto */
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1em; /* Reduz ainda mais o tamanho da fonte para telas menores */
+        padding: 0.6em 2em; /* Menos espaçamento para dispositivos móveis */
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 0.9em; /* Fonte menor para telas muito pequenas */
+        padding: 0.5em 1.5em; /* Ajuste no espaçamento */
+    }
+}
+
+.instalationBg {
+    margin-top: 100px;
+    width: 100vw;
+    height: 200px; /* Defina a altura se necessário */
+    background-image: url('../../img/instalation.png'); /* Caminho absoluto (da raiz do projeto) */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+}

@@ -1,0 +1,12 @@
+.blog_container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4em; */
+
+}

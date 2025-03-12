@@ -1,0 +1,48 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    height: 50px;
+    width: 100%;
+    background-color: #01257d;
+    color: #f8e9d4;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.btn:hover {
+    color: #01257d;
+    background-color: #f8e9d4;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 1.1em; /* Reduz o tamanho da fonte */
+        height: 45px; /* Ajusta a altura do botão */
+        border-radius: 12px; /* Reduz o raio do botão */
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1em; /* Fonte menor para telas médias */
+        height: 40px; /* Altura ajustada */
+        padding: 0.6em 1em; /* Espaçamento reduzido */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 0.9em; /* Fonte ainda menor para telas pequenas */
+        height: 35px; /* Altura mais compacta */
+        padding: 0.5em 0.8em; /* Menor espaçamento interno */
+        border-radius: 10px; /* Botão mais compacto */
+    }
+}

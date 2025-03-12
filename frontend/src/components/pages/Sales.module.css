@@ -1,0 +1,31 @@
+.sales_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4em; */
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+
+.textIntro {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.textIntro h1 {
+    padding: 20px;
+    color: #01257d;
+    font-size: 2rem;
+}
+
+.textIntro h2 {
+    font-size: 1.5rem;
+    font-weight:lighter;
+}

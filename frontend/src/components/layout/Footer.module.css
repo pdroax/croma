@@ -1,0 +1,193 @@
+.footer {
+    background-color: #01257d;
+    color: #f8e9d4;
+    padding: 3em;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.copy_right {
+    text-align: center;
+}
+
+.services {
+    margin: 0 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.footerItems {
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap; 
+}
+
+.services li a {
+    text-decoration: none;
+    color: #f8e9d4;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.adress li.listLink a {
+    text-align: flex-start;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #f8e9d4;
+
+}
+
+.adress li{
+    list-style: none;
+    max-width: 300px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #f8e9d4;
+}
+
+.social_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+.social_list li {
+    margin: 0 1em;
+    transition: .5s;
+    font-size: 1rem;
+}
+
+.hour p, .hour h4 {
+    text-align: start;
+}
+
+.social_list li:hover {
+    color: #f8e9d4;
+}
+
+.social_list li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social_list svg {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.copy_right {
+    margin-top: 2em;
+    font-size: 1rem;
+}
+
+.copy_right span {
+    font-weight: bold;
+    color: #f8e9d4;
+}
+
+a.whatsApp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    width: 100px;
+    font-size: 3.5rem;
+    background-color: #01257d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px ;
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.473);
+}
+
+iframe {
+    border-radius: 25px;
+}
+
+.listLink {
+    text-align: start;
+}
+
+.footerLogo {
+    filter: grayscale() contrast(100%) brightness(100);
+}
+
+
+@media (max-width: 1024px) {
+    .footerItems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adress {
+        align-items: center;
+        text-align: center;
+    }
+
+    .adress li {
+        align-items: center;
+    }
+
+    .social_list {
+        align-items: center;
+    }
+
+    .hour p, .hour h4 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2em;
+    }
+
+    a.whatsApp {
+        width: 60px;
+        font-size: 2rem;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .copy_right {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerItems {
+        gap: 10px;
+    }
+
+    .adress li a, .adress li iframe {
+        margin-bottom: 10px;
+    }
+
+    .social_list svg {
+        font-size: 1.2em;
+    }
+
+    a.whatsApp {
+        font-size: 2rem;
+        padding: 5px;
+    }
+}

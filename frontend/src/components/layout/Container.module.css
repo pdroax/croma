@@ -1,0 +1,58 @@
+.container {   
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+    flex-wrap: wrap;
+}
+
+.min-height {
+    min-height: 75%;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: flex-start; /* Alinha os itens à esquerda */
+        padding: 0 20px; /* Adiciona um espaçamento interno */
+    }
+
+    .column {
+        align-items: center; /* Centraliza os itens em telas menores */
+    }
+
+    .min-height {
+        min-height: auto; /* Remove a restrição de altura mínima para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Altera o layout para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .start {
+        justify-content: center; /* Centraliza os itens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+        padding: 0 10px; /* Ajusta o padding para telas menores */
+    }
+
+    .column {
+        gap: 15px; /* Adiciona espaçamento entre os itens da coluna */
+    }
+}
