@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom"
 import { useState } from "react";
 import styles from './Navbar.module.css'
 import logo from '../../img/croma-logo.png'
-
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -45,12 +44,7 @@ function Navbar() {
                         <NavLink to='/aboutus' onClick={() => { toTop(); closeMenu(); }} className={({ isActive }) => isActive ? styles.active : ''}>Sobre nós</NavLink>
                     </li>
                     <li className={styles.item}>
-                        <a 
-                            onClick={
-                                closeMenu
-                            }
-
-                            style={{cursor: "pointer"}} href="#contact">Contato</a>
+                        <a onClick={closeMenu} style={{cursor: "pointer"}} href='#contact'>Contato</a>
                     </li>
                 </ul>
 
