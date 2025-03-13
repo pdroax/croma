@@ -40,7 +40,7 @@ function AboutUs () {
             <div className={styles.bgImg}>
             </div>
 
-            <div id='contact'>
+            <div id="contact">
                 <Contact/>
             </div>
         </section>

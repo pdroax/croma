@@ -17,7 +17,7 @@ function Install () {
                 </div>
                 <Products/>
             </div>
-            <div id='contact'>
+            <div id="contact">
                 <Contact/>
             </div>
         </section>

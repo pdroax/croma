@@ -52,7 +52,7 @@ function Home () {
                 {/* <img src={instalationPhoto} alt='Imagens de películas instaladas'></img> */}
             </div>
 
-            <div id='contact'>
+            <div id="contact">
                 <br></br>
                 <br></br>
                 <Contact/>

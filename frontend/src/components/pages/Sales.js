@@ -19,7 +19,7 @@ function Sales () {
             </div>
             <div className={styles.bg}>
             </div>
-            <div id='contact'>
+            <div id="contact">
                 <Contact/>
             </div>
         </section>

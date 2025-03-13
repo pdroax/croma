@@ -10,7 +10,7 @@ function Blog () {
             <div className={styles.content}>
                 <PostOne />
             </div>
-            <div id='contact'>
+            <div id="contact">
                 <Contact/>
             </div>
         </section>
